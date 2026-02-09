@@ -1,0 +1,52 @@
+{
+  "name": "cashra-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.11.0",
+    "buffer": "^6.0.3",
+    "framer-motion": "^12.23.12",
+    "js-cookie": "^3.0.5",
+    "next-cryptr": "^1.1.3",
+    "react": "^18.3.1",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.2.1",
+    "react-on-images-loaded": "^2.2.8",
+    "react-scripts": "5.0.1",
+    "react-use-websocket": "^4.8.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "set GENERATE_SOURCEMAP=false && react-scripts build",
+    "tailwind": "tailwindcss -i ./src/utils/custom.css -o ./src/utils/tailwind.css --watch",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.5"
+  }
+}

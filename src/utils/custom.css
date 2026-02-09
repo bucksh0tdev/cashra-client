@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+.clicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 3px solid #0000;
+  border-radius: 12rem;
+  animation: 7s rotate linear infinite;
+}
+
+.plusone {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  color: #667BC6;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: pink 0px 0px 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  pointer-events: none;
+  animation: plusonekey 2s forwards;
+}
+
+@keyframes plusonekey {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -250%);
+  }
+  100% {
+    transform: translate(-50%, -300%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
