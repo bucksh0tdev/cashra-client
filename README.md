@@ -44,8 +44,10 @@ npm start
 - `public/libs` Statik görseller
 
 ## 📸 Ekran Görüntüleri
-![Cashra Oyun Ekranı 1](assets/image-1.jpeg)
-![Cashra Oyun Ekranı 2](assets/image-2.jpeg)
+<p align="center">
+  <img src="assets/image-1.jpeg" width="360" />
+  <img src="assets/image-2.jpeg" width="360" />
+</p>
 
 ## 🛡️ Güvenlik Notu
 - Secret ve URL değerleri `.env` içindedir.
